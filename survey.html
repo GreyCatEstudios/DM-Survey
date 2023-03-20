@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dungeon Master Services Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+<div class="container">
+  <h1 id="title" class="text-center mt-5 mb-4">Dungeon Master Services Survey</h1>
+  <p id="description" class="text-center mb-5">Thank you for choosing my services as a professional dungeon master for D&amp;D 5e. Your feedback will help me improve my services.</p>
+</div>
+
+<form id="survey-form" class="container col-md-6 offset-md-3">
+
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input id="username" class="form-control" type="text" placeholder="Enter your username" required />
+  </div>
+
+  <div class="form-group">
+    <label for="game_name">Game Name</label>
+    <input id="game_name" class="form-control" type="text" placeholder="Enter the name of the game you played" required />
+  </div>
+
+  <div class="form-group">
+    <label for="game_type">Game Type</label>
+    <select id="game_type" class="form-control" required>
+      <option disabled selected>(Select one)</option>
+      <option>Oneshot</option>
+      <option>Campaign</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="game_review">Game Review</label>
+    <div class="star-rating">
+      <input id="game_rating_1" type="radio" name="game_rating" value="1" required />
+      <label for="game_rating_1"><i class="fas fa-star"></i></label>
+      <input id="game_rating_2" type="radio" name="game_rating" value="2" required />
+      <label for="game_rating_2"><i class="fas fa-star"></i></label>
+      <input id="game_rating_3" type="radio" name="game_rating" value="3" required />
+      <label for="game_rating_3"><i class="fas fa-star"></i></label>
+      <input id="game_rating_4" type="radio" name="game_rating" value="4" required />
+      <label for="game_rating_4"><i class="fas fa-star"></i></label>
+      <input id="game_rating_5" type="radio" name="game_rating" value="5" required />
+      <label for="game_rating_5"><i class="fas fa-star"></i></label>
+    </div>
+    <textarea id="game_review" class="form-control mt-2" placeholder="Tell me about your experience playing the game"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="service_review">Service Review</label>
+    <div class="star-rating">
+      <input id="service_rating_1" type="radio" name="service_rating" value="1" required />
+      <label for="service_rating_1"><i class="fas fa-star"></i></label>
+      <input id="service_rating_2" type="radio" name="service_rating" value="2" required />
+      <label for="service_rating_2"><i class="fas fa-star"></i></label>
+      <input id="service_rating_3" type="radio" name="service_rating" value="3" required />
+      <label for="service_rating_3"><i class="fas fa-star"></i></label>
+      <input id="service_rating_4" type="radio" name="service_rating" value="4" required />
+      <label for="service_rating_4"><i class="fas fa-star"></i></label>
+      <input id="service_rating_5" type="radio" name="service_rating" value="5" required />
+      <label for="service_rating_5"><i class="fas fa-star"></i></label>
+    </div>
+    <textarea id="service_review" class="form-control mt-2" placeholder="Tell me about your experience with my services as a dungeon master"></textarea>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+</form>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</body>
+</html>
